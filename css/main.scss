@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+body {
+    height: 100vh;
+    margin: 0%;
+    font-family: 'Poppins', arial;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.nav-container {
+    background: #05172E;
+
+    a {
+        color: white;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+
+    .logo {
+        color: #C1DE7B;
+        font-weight: bold;
+    }
+
+
+    ul {
+        display: flex;
+
+        a {
+            display: block;
+            padding: 0 1em;
+        }
+    }
+
+}
+
+.social-header, .hero-design {
+    display: none;
+}
+
+.hire-me {
+    padding: 1em 1em 1em 1em;
+    background: #061E3B;
+    color: white;
+}
+
+.hireme {
+    color: #C1DE7B;
+} 
+
+.hero {
+    background: #061E3B;
+    color: white;
+    display: grid;
+    text-align: center;
+    padding: 4em;
+
+    .stripes {
+        width: 15%;
+    }
+
+    h3 {
+        color: #C1DE7B;
+        font-family: sf mono;
+        font-weight: lighter;
+    }
+}
+
+.meet {
+    display: flex;
+    margin: 0 auto;
+    width: 200px;
+    font-weight: bold;
+    color: #FF6D6D;
+
+    span{
+        margin-top: 1.25em;
+        margin-right: .5em;
+    }
+}
+
+.scroll {
+    width: 30px;
+    margin-top: 2em;
+}
+
+section {
+    padding: 4em 2em;
+    text-align: center;
+}
+
+.featured {
+    padding-top: 10%;
+    // padding-left: 10em;
+    position: relative;
+}
+
+.featured::before {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: #061E3B;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 30%;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #C1DE7B;
+    letter-spacing: .2em;
+    font-size: 0.85em;
+}
+
+.featured-title {
+    color: black;
+    font-weight: bold;
+    font-size: 2em;
+    margin-top: -.4em;
+    display: block;
+}
+
+.featured-desc {
+    color: #3b3b3b;
+    margin-bottom: 3em;
+    font-size: 0.9em;
+    line-height: 1.8em;
+    font-weight: 500;
+}
+
+.right {
+    width: 400px;
+    padding-bottom: 10%;
+}
+
+.skills {
+    background: #c1de7b;
+}
+
+.skills-container ul li {
+    height: 25em;
+    background: #F7F7F7;
+    padding: 4em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+    
+    .icon-container {
+        height: 100px;
+        display: grid;
+        place-content: center;
+        margin: 0 auto;
+        padding: 2em;
+        
+        &.one, &.two, &.three               {
+            width: 200px;
+        }
+    }
+    
+    .skill-title {
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 1.25em;
+    }
+    
+    .featured-desc {
+        margin-bottom: 2em;
+    }
+}
+
+.portfolio {
+    background: #F7F7F7;
+}
+
+.portfolio-container a img {
+    border-radius: 1em;
+    margin-bottom: 2em;
+}
+
+@media only screen and (min-width: 800px) {
+    
+    .featured, .portfolio {
+        text-align: left;
+    }
+    .featured, .portfolio-container {
+        display: grid;
+        grid-template-columns: 40% auto;
+    }
+    
+    .left, .portfolio-left {
+        display: grid;
+        place-content: center;
+    }
+    
+    .right {
+        margin-left: 2em;
+        margin-top: 1em;
+        padding-left: 5em;
+    }
+    
+    .skills {
+        margin-top: -5em;
+        margin-bottom: -7em;
+        padding-top: 13em;
+    }
+
+    .skills-container ul {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 3em;
+    }
+
+    .portfolio {
+        padding-top: 7em;
+    }
+    
+    .portfolio-container img {
+        margin-left: 2em;
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    .hero {
+        height: 90vh;
+    }
+
+    .nav-container {
+        display: grid;
+        grid-template-columns: 66% auto;
+        background: unset;
+
+        header {
+            background: #05172E;
+        }
+
+        // ul {
+        //     padding: 0em 8em 0em 0em;
+        // }
+    }
+
+    header {
+        padding: 2em 2em 2em 20em;
+    }
+
+    .social-header {
+        padding: 2em 20em 2em 0;
+    }
+
+    section {
+        padding: 20em 20em 4em 20em;
+    }
+
+    .social-header {
+        display: block;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            width: 7.5em;
+            float: right;
+
+            img{
+            width: 25px;
+            }
+        }
+    }
+
+    .hero {
+        // position: absolute;
+        display: grid;
+        grid-template-columns: 66% auto;
+        background: unset;
+        padding: 0;
+
+        .content {
+            background: #061E3B;
+            padding: 20em 8em 6em 20em;
+            text-align: left;
+            
+            .stripes {
+                width: 150px;
+            }
+
+            h1 {
+                font-size: 4.5em;
+                line-height: 0.75em;
+                margin-bottom: 3%;
+                margin-top: 1%;
+            }
+
+            h2 {
+                font-size: 1.25em;
+                color: #8892B0;
+                font-style: italic;
+            }
+
+            h3 {
+                font-size: 1em;
+            }
+        }
+    }
+
+    .meet {
+        margin: unset;
+    }
+
+    .hero-design {
+        display: unset;
+        margin-left: -40%;
+        margin-top: 15%;
+        width: 100%;
+    }
+
+    .portfolio img {
+        float: right;
+        max-width: 750px;
+    }
+
+    .featured {
+        padding: 5em 20em 4em 20em;
+    }
+
+    .hire-me {
+       
+    }
+    // .footer-hero{
+
+    
+    //     .hero-design2 {
+    //         display: unset;
+    //         float: right;
+    //         // margin-left: 5em;
+    //         margin-top: 22%;
+    //         width: 40%;
+    //     }
+    // }
+}
+
+
+.circle {
+    animation: circleAnim 1s infinite alternate-reverse;
+}
+
+@keyframes circleAnim {
+    from{
+        transform: translate(0px, 25px);
+        z-index: 5;
+    }
+
+    to{
+        transform: translate(0px, 0px);
+    }
+}

@@ -1,0 +1,15 @@
+<svg width="650" height="643" viewBox="0 0 650 643" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Hero.image">
+<rect id="Rectangle 7" x="260" width="130" height="130" rx="26" fill="#061E3B"/>
+<rect id="Rectangle 11" x="260" y="260" width="130" height="130" rx="26" fill="#061E3B"/>
+<rect id="Rectangle 15" x="520" y="260" width="130" height="130" rx="26" fill="#061E3B"/>
+<rect id="Rectangle 13" x="260" y="513" width="130" height="130" rx="26" fill="#061E3B"/>
+<rect id="Rectangle 9" opacity="0.43" x="390" y="130" width="130" height="130" rx="26" fill="#061E3B"/>
+<rect id="Rectangle 14" opacity="0.43" x="390" y="390" width="130" height="130" rx="26" fill="#061E3B"/>
+<rect id="Rectangle 8" x="130" y="130" width="130" height="130" rx="26" fill="white"/>
+<rect id="Rectangle 12" x="130" y="390" width="130" height="130" rx="26" fill="white"/>
+<rect id="Rectangle 10" opacity="0.22" y="260" width="130" height="130" rx="26" fill="white"/>
+<circle id="Ellipse 2" cx="325" cy="195" r="65" fill="#C1DE7B"/>
+<circle id="Ellipse 3" cx="195" cy="325" r="65" fill="#C1DE7B"/>
+</g>
+</svg>
